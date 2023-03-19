@@ -36,7 +36,7 @@ body{
     text-transform: uppercase;
 }
 .text-category h1{
-    font-size: 44px;
+    font-size: 35px;
 }
 /*Стиль для свайпа с карточками*/
 .slide-container{
@@ -618,7 +618,7 @@ a.button:hover {
     font-size: 44px;
 }
 .cont-text h1{
-    font-size: 70px;
+    font-size: 50px;
 }
 
 @media screen and (max-width: 768px) {
