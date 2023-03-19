@@ -1,0 +1,261 @@
+.div1 {
+    background-color: #FCA90E;
+    height: 450px;
+}
+.div2 {
+    background-color: #F03C69;
+    height: 500px;
+}
+.avatar-img{
+    width: 200px;
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover {
+    background-color: #0e4bf1;
+}
+.profile-card .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child {
+    border-right: none;
+}
+
+
+
+
+
+
+/*person news*/
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#switch:checked ~ .outer{
+    background: #092c3e;
+}
+.content{
+    display: flex;
+    width: 570px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+#switch:checked ~ .outer .content{
+    background: #092c3e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.outer .toggle{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #092c3e;
+    right: 15px;
+    top: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#switch:checked ~ .outer .toggle{
+    background: #fff;
+}
+.outer .toggle .circle{
+    margin-left: 3px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+#switch:checked ~ .outer .circle{
+    margin-left: 22px;
+    background: #092c3e;
+}
+.image-box {
+    height: 232px;
+    width: 200px;
+    border-radius: 12px;
+    padding: 3px;
+    background: #092c3e;
+}
+.image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 12px;
+}
+#switch:checked ~ .outer .image-box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+#switch:checked ~ .outer .image-box img{
+    border-color: transparent;
+}
+.content .details{
+    width: 58%;
+    margin: 10px 0 20px 20px;
+    color: #092c3e;
+}
+#switch:checked ~ .outer .details{
+    transition: 0.1s;
+    color: #fff;
+}
+.content .details .name{
+    font-size: 23px;
+    font-weight: 600;
+}
+.content .details .job{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .details p{
+    font-size: 15px;
+    margin-top: 6px;
+}
+.content button{
+    display: block;
+    margin-top: 16px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    background: #092c3e;
+    transition: all 0.3s ease;
+}
+.content button:hover{
+    transform: scale(0.97);
+}
+#switch:checked ~ .outer button{
+    background: #fff;
+    color: #092c3e;
+}
+.media-icons{
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+    margin-top: 12px;
+    justify-content: flex-end;
+}
+.media-icons i{
+    display: inline-flex;
+    margin: 0 4px;
+    font-size: 16px;
+    color: #092c3e;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.media-icons i:hover{
+    opacity: 1;
+}
+#switch:checked ~ .outer i{
+    color: #fff;
+    opacity: 1;
+}
+#switch{
+    display: none;
+}

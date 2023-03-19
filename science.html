@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Стимул</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--    Подключение сторонних библиотек/фреймворков-->
+  <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <!--    Подключение наших стилей-->
+  <link href="styles/style2.css" rel="stylesheet">
+</head>
+<body>
+<!--Header нашей страницы-->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <a href="#" class="navbar-brand">Стимул</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Категории</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Что то там</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Что то там</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Конец Header страницы-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 categories">
+      <h4>Категории</h4>
+      <ul>
+        <li class="active"><a href="#" data-filter="all">Все</a></li>
+        <li><a href="#" data-filter="comedy">Комедии</a></li>
+        <li><a href="#" data-filter="drama">Драмы</a></li>
+        <li><a href="#" data-filter="horror">Ужасы</a></li>
+        <li><a href="#" data-filter="action">Боевики</a></li>
+        <li><a href="#" data-filter="romance">Романтика</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="row posts">
+        <div class="col-md-4 post-item comedy">Пост 1 (комедия)</div>
+        <div class="col-md-4 post-item drama">Пост 2 (драма)</div>
+        <div class="col-md-4 post-item horror">Пост 3 (ужасы)</div>
+        <div class="col-md-4 post-item action">Пост 4 (боевик)</div>
+        <div class="col-md-4 post-item romance">Пост 5 (романтика)</div>
+        <div class="col-md-4 post-item comedy">Пост 6 (комедия)</div>
+        <div class="col-md-4 post-item drama">Пост 7 (драма)</div>
+        <div class="col-md-4 post-item horror">Пост 8 (ужасы)</div>
+        <div class="col-md-4 post-item action">Пост 9 (боевик)</div>
+        <div class="col-md-4 post-item romance">Пост 10 (романтика)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+    $('.categories ul li').click(function() {
+      var filter = $(this).find('a').data('filter');
+      if (filter == 'all') {
+        $('.post-item').show();
+      } else {
+        $('.post-item').hide();
+        $('.post-item.' + filter).show();
+      }
+      $('.categories ul li').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
+</body>
+</html>

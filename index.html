@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Стимул</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Подключение сторонних библиотек/фреймворков-->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+<!--    Подключение наших стилей-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+
+<!--Header нашей страницы-->
+<nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container col-lg-10 col-sm-12">
+        <a href="index.html" class="navbar-brand"><img class="logo-dab" src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Категории проектов</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Результаты</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Подписка</a></li>
+                <a class="nav-button mb-2" href="login.html">Войти</a>
+                <a class="nav-button" href="#">Пожертвовать</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Конец Header страницы-->
+
+<!--Начало баннер-->
+<section class="main swiper mySwiper mb-5">
+    <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide col-sm-12">
+            <img src="images/banner.png" alt="" class="image" />
+            <div class="image-data text-center col-lg-5 col-sm-12 mt-sm-1 mb-sm-0">
+                <h2 class="static-font text-white wow fadeInDown  animation1 animaionScore">
+                    Фонд будущих <br />
+                    поколений РС(Я)
+                </h2>
+                <span class="text wow fadeInUp animation1">Опережающее развитие экосистемы формирования подрастающих поколений через создание якорных инновационных компонентов, консолидирующее ресурсы бизнеса, государства и социальных партнеров</span>
+                <h3 class="wow flipInX static-font animation3 text-orange mb-lg-4 mt-lg-5 mt-sm-1">
+                    Пожертвовать
+                </h3>
+                <div class="d-flex text-center banner-btn row col-10">
+                    <button class="wow fadeInLeft  animation1 btn banner-btn1 col-6 mx-auto mb-2">Продуктом</button>
+                    <button class="wow fadeInRight  animation1 btn col-6 banner-btn2 mx-auto">Проектом Фонда</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец баннера-->
+
+<!--Текст-->
+<div class="wow fadeInUp animation3 text-category d-flex justify-content-center align-items-center h-100">
+    <h1 class="text-center display-4 static-font">
+        <span class="text-black">Категории</span>
+        <span class="text-orange">Мероприятий</span>
+    </h1>
+</div>
+<!--Конец текста-->
+
+<!--Флип карточки с категориями-->
+<div class="wow fadeInUp animation5 flipchik mx-auto mb-5">
+    <div class="flip-card">
+        <div class=" flip-card-front wow fadeInUp">
+            <div class="inner">
+                <h3>Культура</h3>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="inner">
+                <h3>Культура</h3>
+                <p>
+                    Выставки, кино, концерты, фестивали, спектакли и т.д.
+                </p>
+                <button class="btn card-category-btn text-pink" href="category.html"><a class="text-pink" href="category.html">Подробнее</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <div class="inner">
+                <h3>Здраво-
+                    охранение</h3>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="inner">
+                <h3>Здраво-
+                    охранение</h3>
+                <p>
+                    медицинские услуги, здоровый образ жизни, медицинские выставки, помощь детям-инвалидам, профилактические мероприятия
+
+                </p>
+                <button class="btn card-category-btn text-blue" href="category.html"><a class="text-blue" href="category.html">Подробнее</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <div class="inner">
+                <h3>Экология</h3>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="inner">
+                <h3>Экология</h3>
+                <p>
+                    сбор мусора, сортировка отходов, очистка воды и воздуха, защита диких животных, экологические туры, экологические музеи и выставки
+
+                </p>
+                <button class="btn card-category-btn text-green" href="category.html"><a class="text-green" href="category.html">Подробнее</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <div class="inner">
+                <h3 style="color: #FF7233">Наука и образование</h3>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="inner">
+                <h3 style="color: #FF7233">Наука и образование</h3>
+                <p style="color: #FF7233">
+                    вебинары, олимпиады, хакатоны, онлайн курсы, семинары, научные конференции, курсы повышения квалификации
+
+                </p>
+                <button style="color: #F0773EFF" class="btn card-category-btn" href="category.html"><a class="text-orange" href="category.html">Подробнее</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <div class="inner">
+                <h3>Спорт</h3>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="inner">
+                <h3>Спорт</h3>
+                <p>
+                    стадионы, залы, бассейны, фитнес-центры, спортивные мероприятия, соревнования и чемпионаты.
+                </p>
+                <button class="btn card-category-btn text-purple" href="category.html"><a class="text-purple" href="category.html">Подробнее</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец флип карточек с категориями-->
+<div class="otstup"></div>
+<!--Начало Карточки Почему-->
+<div class="why-count ">
+    <h2 class=" text-center wow fadeInUp animation4 static-font">Почему стоит жертвовать?</h2>
+    <div class="container mb-5 mt-5">
+        <div class="row col-lg-11 col-md-12 mx-auto">
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="wow fadeInUp animation6 animation1 bg-light why-card">
+                    <div class="card-body">
+                        <img class="mb-4" src="images/why/3.png" alt="logo">
+                        <h5 class="card-title text-pink">Чувство причастности к благотворительности</h5>
+                        <p class="card-text">Жертвуя в проекты, человек ощущает благодарность  и гордость от того, что он может внести вклад в улучшение общества. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="wow fadeInUp animation7 bg-light why-card">
+                    <div class="card-body">
+                        <img class="mb-5" src="images/why/2.png" alt="logo">
+                        <h5 class="card-title text-blue">Бонусы от партнеров</h5>
+                        <p class="card-text">Каждый, кто когда-либо пожертвовавший в проекты может участвовать в аукционах от других пожертвователей и партнеров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="wow fadeInUp animation8 bg-light why-card">
+                    <div class="card-body">
+                        <img class="mb-4" src="images/why/1.png" alt="logo">
+                        <h5 class="card-title text-green">Бонусы от партнеров</h5>
+                        <p class="card-text">1 балл=1 рубль, который потом можно использовать как скидку для покупки товаров и услуг от партнеров.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец Карточки Почему-->
+<div class="otstup"></div>
+<!--Текст-->
+<div class="wow fadeInUp animation5 text-category d-flex justify-content-center align-items-center h-100 mt-5">
+    <h1 class="text-center display-4 mt-3 static-font">
+        <span class="text-black">Товары</span>
+        <span class="text-orange">от пользователей</span>
+    </h1>
+</div>
+<!--Конец текста-->
+
+<!--Карточка с товарами блогеров-->
+<div class="wow fadeInUp animation7 slide-container swiper col-12">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card-swiper swiper-slide">
+                <div class="card card-category">
+                    <img src="images/popular/1.png" alt="">
+                    <div class="card-body-popular card-body">
+                        <h5 class="card-title card-h5-2">Книга «InDriver: От Якутска до Кремниевой долины»</h5>
+                        <p class="">Экслюзивная партия книг от главного предпринимателя Якутии Арсена Томского “InDriver: От Якутска до Кремниевой долины” </p>
+                        <button class="card-button-popular mb-1">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-swiper swiper-slide">
+                <div class="card card-category">
+                    <img src="images/popular/2.png" alt="">
+                    <div class="card-body-popular card-body">
+                        <h5 class="card-title card-h5-2 mb-1 ">Картина «На крыльях любви»</h5>
+                        <p class="mb-5 mt-3">Эксклюзивная картина от талантливой художницы Миры Аргуновой</p>
+                        <button class="card-button-popular mb-1">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-swiper swiper-slide">
+                <div class="card card-category">
+                    <img src="images/popular/4.png" alt="">
+                    <div class="card-body-popular card-body">
+                        <h5 class="card-title card-h5-2 mb-2">Лекция от со-основателя IT-школы “Алтан”</h5>
+                        <p class="mt-3 mb-4">Дьулустаан Осипов проводит лекцию “Какие навыки необходимы для успешного старта в IT”</p>
+                        <button class="card-button-popular mb-1">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-swiper swiper-slide">
+                <div class="card card-category">
+                    <img src="images/popular/3.png" alt="">
+                </div>
+                <div class="card-content card-body-popular card-body">
+                    <h5 class="text-orange card-title card-h5-2">Онлайн-курс от топ-блогера Дормидонтова</h5>
+                    <p class="text-oprange" style="font-size: 16px">Исключительно для нашей платформы для несколько учеников Владимир Дормидонтов проводит несколько трансляций по обучению на игре хомус</p>
+                    <button class="card-button-popular mb-1">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!--Конец карточки с товарами блогеров-->
+<div class="otstup"></div>
+<!--Текст-->
+<div class="wow fadeInUp animation4 text-category d-flex justify-content-center align-items-center h-100">
+    <h1 class="text-center display-4 static-font">
+        <span class="text-black">Наши</span>
+        <span class="text-orange">партнеры</span>
+    </h1>
+</div>
+<!--Конец текста-->
+
+<!--Бегающая строка-->
+<div class="wow fadeInUp animation4 marquee-infinite">
+    <div>
+        <span>
+            <img class="me-5 ml-2" src="images/stroka/1.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/image%202.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/3.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/image%205.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/5.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/1.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/image%202.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/3.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/image%205.png" alt="">
+            <img class="me-5 ml-2" src="images/stroka/5.png" alt="">
+
+        </span>
+    </div>
+</div>
+<!--Конец бешающей строки-->
+<!--Собрали-->
+<div class="wow fadeInUp col-12 text-center mb-3">
+    <div class="cont col-lg-12 col-sm-12 text-center">
+        <img class="cont-mg text-center" src="images/collect/collect.png" alt="Image">
+        <div class="cont-text">
+            <h2>
+                Всего собрали
+            </h2>
+            <h1 class="wow zoomIn animation3">
+                59 232
+            </h1>
+            <p class="m-4 wow slideInUp animation4">
+                Важна каждая копейка!
+            </p>
+        </div>
+    </div>
+</div>
+<!--Конец сбор-->
+<div class="otstup"></div>
+<div class="otstup"></div>
+<!--Текст-->
+<div class="wow fadeInUp animation4 text-category d-flex justify-content-center align-items-center h-100">
+    <h1 class="text-center display-4 mt-5 static-font">
+        <span class="text-black">Наши</span>
+        <span class="text-orange">результаты</span>
+    </h1>
+</div>
+<!--Конец текста-->
+
+<!--Результаты-->
+<div class="wow fadeInUp result mt-3">
+    <div class="container col-12 mb-5 mt-5">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 py-2">
+                <div class="result-card wow fadeInUp animation3">
+                    <div class="card-body">
+                        <img class="mb-4" src="images/result/2.png" alt="logo">
+                        <h2 class="card-title mb-2">402</h2>
+                        <p class="card-text">ребенка прошли исследования об актуальном развитии интеллекта, и навыков когнитивной саморегуляции</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 py-1">
+                <div class="result-card wow fadeInUp animation4">
+                    <div class="card-body">
+                        <img class="mb-1" src="images/result/3.png" alt="logo">
+                        <h2 class="card-title mb-2">14</h2>
+                        <p class="card-text">ветеранам помогли отремонтировать дом</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 py-2">
+                <div class="result-card wow fadeInUp animation5">
+                    <div class="card-body">
+                        <img class="mb-3" src="images/result/1.png" alt="logo">
+                        <h2 class="card-title mb-2">7</h2>
+                        <p class="card-text">организационных и практических семинаров и практикумов проведено в сфере образования</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 py-2">
+                <div class="result-card wow fadeInUp animation6">
+                    <div class="card-body">
+                        <img class="mb-4" src="images/result/4.png" alt="logo">
+                        <h2 class="card-title">58</h2>
+                        <p class="card-text">проектов получили финансирование</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец Карточки#2-->
+<div class="otstup"></div>
+<!--О фонде-->
+<div class="wow fadeInUp animation4 backgroundimg pt-lg-5 pb-lg-5">
+    <div class="container mt-lg-5">
+        <div class="row px-lg-5">
+            <div class="col-md-4 me-5 ms-2 d-flex justify-content-center align-items-center">
+                <img src="images/fond.png" alt="Изображение" class="img-fluid">
+            </div>
+            <div class="col-md-7 mb-5">
+                <h1 class="display-4 mt-5 static-font mb-4">
+                    <span class="text-black">О</span>
+                    <span class="text-orange">фонде</span>
+                </h1>
+                <p class="animated slideInDown">Некоммерческая организация «Целевой Фонд будущих поколений Республики Саха (Якутия)», выступает в качестве исполнителя, донора, грантополучателя, распределителя целевого финансирования программ и проектов республиканского значения.</p>
+                <h5>Мы работаем во имя будущего!!!</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец о фонде-->
+
+<!--Футер-->
+<footer class="col-12">
+    <div class="container col-89mx-auto mb-5 mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title">Дабай</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="">
+                    <div class="card-body me-auto footer-text">
+                        <h5 class="mb-4">
+                            <a href="#">
+                                Меню
+                            </a>
+                        </h5>
+                        <p class="mt-2">
+                            <a href="#">
+                                Категории проектов
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                Результаты
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                Подписка
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-2">
+                <div class="">
+                    <div class="card-body me-auto">
+                        <h5>
+                            Контакты
+                        </h5>
+                        <p>
+                            677018, Россия,Республика Саха (Якутия),г. Якутск, ул. Аммосова д. 18
+                        </p>
+                        <p>
+                            По любым вопросам пишите на:
+                        </p>
+                        <p style="font-weight: bold">
+                            E-mail: office@fbprs.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Конец футера-->
+
+<script src="js/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.6.4.js"   integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="   crossorigin="anonymous"></script>
+<script>
+    new WOW().init();
+
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints:{
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
+</body>
+</html>

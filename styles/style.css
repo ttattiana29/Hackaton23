@@ -1,0 +1,701 @@
+@font-face {
+    font-family: "Unbounded";
+    font-style: normal;
+}
+body{
+    background: #F5F4EF;
+}
+.nav-button a{
+    text-decoration: none;
+    color: #F0773E;
+}
+.nav-button a:hover{
+    text-decoration: none;
+    color: #F0773E;
+
+}
+.logo-dab{
+    height: 50px;
+}
+.nav-button{
+    border-radius: 30px;
+    border: 1.5px solid #F0773E;
+    text-decoration: none;
+    color: #F0773E;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    height: 40px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.static-font{
+    font-family: "Unbounded", sans-serif;
+    text-transform: uppercase;
+}
+.text-category h1{
+    font-size: 44px;
+}
+/*Стиль для свайпа с карточками*/
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card-swiper{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: darkgray;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: darkgray;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid darkgray;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: darkgray;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: gray;
+}
+
+.swiper-navBtn{
+    color: darkgray;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: gray;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: grey;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: darkgray;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+/*Конец для стиля для свайпа с карточками*/
+
+
+.flipchik {
+    margin: 0;
+    width: 95vw;
+    /*padding: 20px;*/
+    /*min-height: 100vh;*/
+    /*background-color: #df1f2d;*/
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    margin: 25px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 320px;
+    min-height: 320px;
+    height: auto;
+    background-image: url(cardCategory/1.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card:nth-of-type(2) .flip-card-front,
+.flip-card:nth-of-type(2) .flip-card-back {
+    background-image: url(cardCategory/2.png);
+}
+
+.flip-card:nth-of-type(3) .flip-card-front,
+.flip-card:nth-of-type(3) .flip-card-back {
+    background-image: url(cardCategory/4.png);
+}
+
+.flip-card:nth-of-type(4) .flip-card-front,
+.flip-card:nth-of-type(4) .flip-card-back {
+    background-image: url(cardCategory/3.png);
+}
+
+.flip-card:nth-of-type(5) .flip-card-front,
+.flip-card:nth-of-type(5) .flip-card-back {
+    background-image: url(cardCategory/5.png);
+}
+
+.flip-card-front {
+    transform: rotateY(0deg);
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front::after,
+.flip-card-back::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*background-color: #0a0a0a;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.flip-card-front .inner,
+.flip-card-back .inner {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+}
+
+.inner .icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.inner h3 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.inner p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.flip-card:hover .flip-card-front {
+    transform: rotateY(-180deg);
+}
+
+.flip-card:hover .flip-card-back {
+    transform: rotateY(0deg);
+}
+
+.raiting-img{
+    max-width: 150px;
+}
+.card{
+    border: none;
+    background: grey;
+}
+
+
+
+
+
+
+/*категории*/
+.categories ul {
+    background: green;
+    list-style: none;
+    padding: 0;
+}
+.categories ul li {
+    background: green;
+    margin-bottom: 10px;
+}
+.categories ul li a {
+    text-decoration: none;
+}
+.categories ul li.active a {
+    color: #fff;
+    background-color: #3c3c3c;
+}
+.post-item {
+    background: green;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+.marquee-infinite {
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 0;
+    /*border: 1px solid #000;*/
+    /*max-width: 60%;*/
+    overflow: hidden;
+}
+
+/*Здесь можно поиграть со свойством width: mac-content*/
+.marquee-infinite div {
+    display: flex;
+    width: 150%;
+    animation: marquee-infinite 10s linear infinite;
+}
+
+.marquee-infinite h1 {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee-infinite span {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-size: 100%;
+}
+
+.marquee-infinite img {
+    background-size: 100%;
+}
+
+.marquee-infinite:hover div {
+    animation-play-state: paused;
+}
+
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.text-pink{
+    color: #F03C60;
+}
+
+.text-blue{
+    color: #459CF2;
+}
+.text-green{
+    color: #A0E061;
+}
+.text-yellow{
+    color: #FFDB4C;
+}
+.text-purple{
+    color: #5F49FA;
+}
+.card-category-btn a{
+    text-decoration: none;
+
+}
+.card-category-btn{
+    width: 50%;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.text-orange{
+    color: #F0773EFF;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: -10vh;
+}
+.wrapper,
+.slide {
+    position: relative;
+    width: 100%;
+    height: 95%;
+}
+.slide {
+    overflow: hidden;
+}
+.slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    z-index: 10;
+}
+.slide .image {
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*width: 50%;*/
+    z-index: 100;
+}
+.image-data span.text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.image-data h2 {
+    font-size: 45px;
+    font-weight: 600;
+    /*color: #fff;*/
+}
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+a.button:hover {
+    color: #fff;
+    background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+/*.swiper-button-next {*/
+/*    right: 50px;*/
+/*}*/
+/*.swiper-button-prev {*/
+/*    left: 50px;*/
+/*}*/
+.nav-btn::before,
+.nav-btn::after {
+    font-size: 25px;
+    color: #fff;
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        visibility: hidden;
+    }
+    .swiper-pagination-bullet {
+        visibility: visible;
+    }
+}
+
+.banner-btn{
+    max-width: 50vw;
+    /*border-radius: 30px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-btn1{
+    border-radius: 30px;
+    height: 54px;
+    width: 207px;
+    background: #F0773EFF;
+    font-size: 18px;
+    color: #fff
+}
+
+.banner-btn2{
+    border-radius: 30px;
+    height: 54px;
+    width: 262px;
+    font-size: 18px;
+    /*border: 1.5px solid #F0773EFF;*/
+    background: #F5F4EF;
+    color: #F0773EFF;
+}
+
+.why-count{
+    background: #F0773E;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+.why-count h2{
+    font-size: 44px;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    color: #fff;
+}
+.why-count h5{
+    font-size: 22px;
+}
+.why-count p{
+    font-size: 16px;
+}
+.why-card{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 400px;
+}
+.card-category{
+    border-radius: 30px;
+    border: none;
+    background: none;
+}
+.card-category p{
+    font-size: 14px;
+}
+.card-category h5{
+    font-size: 20px;
+    color: #F0773EFF;
+}
+
+.card-button-popular{
+    width: 100%;
+    border: 2px solid #F0773EFF;
+    border-radius: 30px;
+    height: 40px;
+    font-size: 16px;
+    color: #F0773EFF;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+.card-body-popular{
+    padding: 1.5rem 1.5rem;
+    background: #fff;
+    border-radius: 0 0 30px 30px;
+}
+.collect{
+    background-image: url("collect.png");
+    /*background-size: 100%;*/
+    /*width: 100%;*/
+    height: 468px;
+}
+
+
+
+.cont {
+    /*padding: 0;*/
+    position: relative;
+}
+.cont-img {
+    width: 100vw;
+    height: auto;
+}
+.cont-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    /*font-weight: bold;*/
+    text-align: center;
+    color: #fff;
+}
+.cont-text h2{
+    font-size: 44px;
+}
+.cont-text h1{
+    font-size: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 16px;
+    }
+}
+
+.result{
+    background: #F0773EFF;
+    padding: 20px;
+}
+
+.result-card{
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    /*height: 250px;*/
+    font-size: 16px;
+    background: none;
+    color: #fff;
+}
+
+footer{
+    background: #F0773EFF;
+    color: #fff;
+    margin-left: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+header{
+    height: 56px;
+}
+
+.content {
+    height: calc(100vh - 112px);
+}
+
+.animation1{
+    animation-delay: 0.25s;
+}
+.animation2{
+    animation-delay: 0.5s;
+}
+.animation3{
+    animation-delay: 0.75s;
+}
+.animation4{
+    animation-delay: 1s;
+}
+.animation5{
+     animation-delay: 1.25s;
+ }
+.animation6{
+    animation-delay: 1.5s;
+}
+.animation7{
+    animation-delay: 2s;
+}
+.animation8{
+    animation-delay: 2.25s;
+}
+.animation9{
+    animation-delay: 2.5s;
+}
+.animation10{
+    animation-delay: 2.25s;
+}
+
+.animaionScore{
+    animation-duration: 1s;
+}
+
+.otstup{
+    height: 100px;
+}
