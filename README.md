@@ -7,5 +7,5 @@
 пожертвований денег
 и продуктов
 
-[Ссылка на презентацию]([https://nodejs.org/](https://drive.google.com/file/d/1j2rce3xD5JZDpnsi_DKb8FNu6EPobPE5/view?usp=sharing)) 
+[Ссылка на презентацию](https://drive.google.com/file/d/1j2rce3xD5JZDpnsi_DKb8FNu6EPobPE5/view?usp=sharing)
  
